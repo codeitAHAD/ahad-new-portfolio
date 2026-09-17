@@ -3,148 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdul ahad | portfolio</title>
-    <link rel="stylesheet"href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Abdul Ahad — aspiring software developer building projects with Python, C++, Java, JavaScript and web technologies.">
+    <meta name="theme-color" content="#08090d">
+    <title>Abdul Ahad | Software Developer Portfolio</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
+    <div class="noise"></div>
+    <div class="cursor-glow"></div>
 
-    <!--Navigation bar-->
-    <nav> 
-        <h2>Abdul Ahad</h2>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Project</a></li>
-            <li><a href="#contact">Contact</a></li>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="brand" href="#home" aria-label="Abdul Ahad home">
+                <span class="brand-mark">A</span>
+                <span>Abdul Ahad</span>
+            </a>
 
-        </ul>
-    </nav>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
-    <!--Home section-->
-    <section id="home" class="hero">
+            <ul class="nav-links" id="nav-links">
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <div class="hero-content">
-            <p class="greeting">Hello 🖐, I'm</p>
-            <h1>Abdul Ahad</h1>
-            <h2>Aspiring Software Developer</h2>
-            <p class="description">i'm learning programming and building project 
-                to improve my skills  and become a better Developer
-            </p>
-            <p class="description">
-                I'm passionate about creating innovative solutions and solving complex problems,
-                i enjoyed learning new technologies and applying them to real-world projects.
-                i am currently working with languages and tools such as python, CPP, git and Github.
-            </p>
-            
-            <div class="hero-buttons">
-                <a href="#projects" class="btn">View My Work</a>
-                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+    <main>
+        <section id="home" class="hero section">
+            <div class="hero-orb orb-one"></div>
+            <div class="hero-orb orb-two"></div>
+            <div class="hero-grid"></div>
 
+            <div class="hero-content reveal">
+                <div class="status-pill">
+                    <span class="status-dot"></span>
+                    Currently learning & building
+                </div>
+
+                <p class="eyebrow">HELLO, I'M</p>
+                <h1>Abdul <span>Ahad.</span></h1>
+                <h2>Aspiring <span class="typing" id="typing"></span></h2>
+
+                <p class="hero-description">
+                    I’m learning programming, building real projects and turning ideas into useful software.
+                    My current toolkit includes Python, C++, Java, JavaScript, Git and GitHub.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        View my work <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-ghost">Let's connect</a>
+                </div>
+
+                <div class="quick-links">
+                    <a href="https://github.com/codeitAHAD" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/iknowyouahaddd/" target="_blank" rel="noopener" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="mailto:khanabdulahad499@gmail.com" aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
             </div>
 
-        </div>
-    </section>
-    <section id="about">
-        <h2>about me</h2>
-        <p>Hello! I'm Abdul Ahad, a passionate software developer.
-            i'm currently learning programming and building projects to improve my development skills. 
-        </p>
-        
-        <p>
-            I'm a passionate and dedicated software developer with a strong interest in creating innovative solutions. 
-            I enjoy learning new technologies and applying them to real-world projects. 
-            My goal is to continuously improve my skills and contribute to meaningful projects that make a positive impact.
-        </p>
+            <a href="#about" class="scroll-indicator" aria-label="Scroll to about">
+                <span>SCROLL</span>
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
         </section>
 
-        <section id="skills">
-            <h2> my Skills</h2>
-            <div class="skills container">
-                <div class="skill card">
-                    <h3>Python</h3>
-                    <p>Proficient in Python programming language.</p>
-                </div>
-                <div class="skill card">
-                    <h3>C++</h3>
-                    <p>Intermediate knowledge of C++ programming language.</p>
-                </div>
-                <div class="skill card">
-                    <h3>JAVA</h3>
-                    <p>advanced knowledge of JAVA programming language.</p>
-                </div>
-                <div class="skill card">
-                    <h3>HTML</h3>
-                    <p>Proficient in creating web pages with HTML.</p>
-                </div>
-                <div class="skill card">
-                    <h3>CSS</h3>
-                    <p>Proficient in styling web pages with CSS.</p>
-                </div>
-                <div class="skill card">
-                    <h3>JavaScript</h3>
-                    <p>Intermediate knowledge of JavaScript programming language.</p>
-                </div>
-                <div class="skill card">
-                    <h3>Git and GitHub</h3>
-                    <p>Experience with version control and collaborative development.</p>
-                </div>
-                <div class="skill card">
-                    <h3>SQL</h3>
-                    <p>Proficent in writing queries and managing relational databases.</p>
-                </div>
-
+        <section id="about" class="section content-section">
+            <div class="section-heading reveal">
+                <p class="eyebrow">01 / ABOUT</p>
+                <h2>Building my skills,<br><span>one project at a time.</span></h2>
             </div>
-        </section>
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="projects container">
 
-                <div class="project card">
-                    <h3>Bank Management System</h3>
-                    <p>A python based application that allows users to check their balance, deposit money, and withdraw funds.</p>
-                    <p class="technologies"> Python</p>
-                    <a href="https://github.com/codeitAHAD/bank-management.git" class="project-buttons">View Project</a>
-                </div>
-
-                <div class="project card">
-                    <h3>File Handling</h3>
-                    <p>A python based file handling project in which user can do CRUD operations </p>
-                    <p class="technologies"> Python</p>
-                    <a href="https://github.com/codeitAHAD/file-handling.git" class="project-buttons">View Project</a>
+            <div class="about-grid">
+                <div class="about-copy glass-card reveal">
+                    <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+                    <p>
+                        Hello! I'm Abdul Ahad, an aspiring software developer with a strong interest in
+                        programming and building practical projects.
+                    </p>
+                    <p>
+                        I enjoy learning new technologies, solving problems and applying what I learn to
+                        real-world projects. My goal is to continuously improve as a developer and eventually
+                        contribute to meaningful software.
+                    </p>
+                    <div class="mini-stats">
+                        <div><strong>02+</strong><span>Projects</span></div>
+                        <div><strong>08</strong><span>Core skills</span></div>
+                        <div><strong>∞</strong><span>Things to learn</span></div>
                     </div>
+                </div>
+
+                <div class="about-visual reveal">
+                    <div class="terminal-window">
+                        <div class="terminal-top">
+                            <span></span><span></span><span></span>
+                            <small>ahad@portfolio ~</small>
+                        </div>
+                        <div class="terminal-body">
+                            <p><span class="code-purple">const</span> developer = {</p>
+                            <p>&nbsp;&nbsp;name: <span class="code-green">"Abdul Ahad"</span>,</p>
+                            <p>&nbsp;&nbsp;focus: <span class="code-green">"Software Development"</span>,</p>
+                            <p>&nbsp;&nbsp;learning: [</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-green">"Python"</span>, <span class="code-green">"AI/ML"</span>,</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-green">"Web Development"</span></p>
+                            <p>&nbsp;&nbsp;],</p>
+                            <p>&nbsp;&nbsp;mindset: <span class="code-green">"Keep building."</span></p>
+                            <p>};<span class="cursor">_</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills-section">
+            <div class="section-heading centered reveal">
+                <p class="eyebrow">02 / TOOLKIT</p>
+                <h2>Technologies I <span>work with.</span></h2>
+                <p>My current skills and tools as I continue growing as a developer.</p>
+            </div>
+
+            <div class="skills-grid">
+                <article class="skill-card reveal"><i class="fa-brands fa-python"></i><h3>Python</h3><p>Programming & problem solving</p><span>Learning</span></article>
+                <article class="skill-card reveal"><i class="fa-solid fa-code"></i><h3>C++</h3><p>Programming fundamentals</p><span>Intermediate</span></article>
+                <article class="skill-card reveal"><i class="fa-brands fa-java"></i><h3>Java</h3><p>Object-oriented programming</p><span>Advanced</span></article>
+                <article class="skill-card reveal"><i class="fa-brands fa-html5"></i><h3>HTML</h3><p>Semantic web structure</p><span>Proficient</span></article>
+                <article class="skill-card reveal"><i class="fa-brands fa-css3-alt"></i><h3>CSS</h3><p>Responsive web design</p><span>Proficient</span></article>
+                <article class="skill-card reveal"><i class="fa-brands fa-js"></i><h3>JavaScript</h3><p>Interactive web experiences</p><span>Intermediate</span></article>
+                <article class="skill-card reveal"><i class="fa-brands fa-github"></i><h3>Git & GitHub</h3><p>Version control & projects</p><span>Working knowledge</span></article>
+                <article class="skill-card reveal"><i class="fa-solid fa-database"></i><h3>SQL</h3><p>Queries & relational data</p><span>Proficient</span></article>
+            </div>
+        </section>
+
+        <section id="projects" class="section content-section projects-section">
+            <div class="section-heading reveal">
+                <p class="eyebrow">03 / PROJECTS</p>
+                <h2>Things I've <span>built.</span></h2>
+                <p>Small projects today, bigger systems tomorrow.</p>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card featured reveal">
+                    <div class="project-visual bank-visual">
+                        <div class="visual-glow"></div>
+                        <i class="fa-solid fa-building-columns"></i>
+                        <span>PYTHON</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-number">01</div>
+                        <h3>Bank Management System</h3>
+                        <p>A Python-based application where users can check their balance, deposit money and withdraw funds.</p>
+                        <div class="tech-tags"><span>Python</span><span>OOP</span></div>
+                        <a href="https://github.com/codeitAHAD/bank-management" target="_blank" rel="noopener" class="project-link">
+                            View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-visual file-visual">
+                        <div class="visual-glow"></div>
+                        <i class="fa-solid fa-folder-open"></i>
+                        <span>PYTHON</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-number">02</div>
+                        <h3>File Handling</h3>
+                        <p>A Python project focused on file operations where users can perform CRUD-style actions.</p>
+                        <div class="tech-tags"><span>Python</span><span>File I/O</span></div>
+                        <a href="https://github.com/codeitAHAD/file-handling" target="_blank" rel="noopener" class="project-link">
+                            View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
         </section>
 
         <section id="contact" class="section contact-section">
-            <div class="section-title">
-                <p>Get in Touch</p>
-                <h2>Contact Me</h2>
-            </div>
-            <div class="contact-content">
+            <div class="contact-card reveal">
+                <div class="contact-decoration"></div>
+                <p class="eyebrow">04 / CONTACT</p>
+                <h2>Let's build something<br><span>interesting.</span></h2>
                 <p>
-                    interested in connecting or checking out my work? feel free to reach out to me through the contact form below or connect with me on social media.
+                    Want to check out my work, connect with me or just say hello?
+                    My inbox and social links are open.
                 </p>
+
                 <div class="contact-buttons">
-                    <a href="mailto:khanabdulahad499@gmail.com" class="btn"><i class="fa-solid fa-envelope"></i>Email Me</a>
-                    <a href="https://github.com/codeitAHAD" class="btn"><i class="fa-brands fa-github"></i> GitHub</a>
-                    <a href="https://www.instagram.com/iknowyouahaddd/" class="btn"><i class="fa-brands fa-instagram"></i> Instagram</a>
-                    
+                    <a href="mailto:khanabdulahad499@gmail.com" class="btn btn-primary">
+                        <i class="fa-solid fa-envelope"></i> Email me
+                    </a>
+                    <a href="https://github.com/codeitAHAD" target="_blank" rel="noopener" class="btn btn-ghost">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.instagram.com/iknowyouahaddd/" target="_blank" rel="noopener" class="btn btn-ghost">
+                        <i class="fa-brands fa-instagram"></i> Instagram
+                    </a>
                 </div>
             </div>
         </section>
+    </main>
 
-        <footer>
-            <p>
-                &copy; 2024 Abdul Ahad. All rights reserved.
-            </p>
-            <p>
-                built with ❤️ and ☕ by Abdul Ahad
-            </p>
-        </footer>
+    <footer>
+        <div class="footer-inner">
+            <a class="brand" href="#home"><span class="brand-mark">A</span><span>Abdul Ahad</span></a>
+            <p>Designed & built by Abdul Ahad · <span id="year"></span></p>
+            <div class="footer-socials">
+                <a href="https://github.com/codeitAHAD" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/iknowyouahaddd/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
 
-        <button id="scroll-top" class="scroll-top"></button>
+    <button id="scroll-top" class="scroll-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
     <script src="script.js"></script>
 </body>
 </html>
